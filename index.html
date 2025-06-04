@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS (only for essential styles not available in Bootstrap) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand me-lg-5" href="index.html">
+                <img src="static/img/log.png" alt="Developer Logo" width="180" height="50"
+                    class="d-inline-block align-top rounded">
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto me-lg-4 mb-2 mb-lg-0">
+                    <li class="nav-item mx-lg-2 mx-xl-3">
+                        <a class="nav-link fw-bold active" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item mx-lg-2 mx-xl-3">
+                        <a class="nav-link fw-bold" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item mx-lg-2 mx-xl-3">
+                        <a class="nav-link fw-bold" href="services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item mx-lg-2 mx-xl-3">
+                        <a class="nav-link fw-bold" href="projects.html">PROJECTS</a>
+                    </li>
+                    <li class="nav-item mx-lg-2 mx-xl-3">
+                        <a class="nav-link fw-bold" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+
+                <!-- Download CV Button -->
+                <div class="d-flex ms-lg-4">
+                    <a href="static/file/myCv-Simon.pdf" download class="btn btn-primary fw-bold px-4 py-2"
+                        target="_blank">
+                        <i class="fas fa-download me-2"></i>DOWNLOAD CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- START Home Banner -->
+        <section class="py-5" style="background-color: #04452e;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Left Column - Content -->
+                    <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 text-white p-4 p-lg-5 rounded-3">
+                        <div class="pe-lg-4">
+                            <h3 class="mb-3" style="color: #C9F31D;">Hello I'm Simon!</h3>
+                            <h2 class="display-5 fw-bold mb-3">
+                                A WEB <span style="color: #C9F31D;">Developer & DESIGNER</span>
+                            </h2>
+                            <p class="lead mb-4">
+                                Solution-oriented mindset, problem-solving enthusiasm, positive attitude
+                                towards challenges, overcoming obstacles with enthusiasm.
+                            </p>
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="#" class="btn btn-lg px-4 fw-bold"
+                                    style="background-color: #C9F31D; color: #00754c;">Hire Me</a>
+                                <a href="#" class="btn btn-outline-light btn-lg px-4">Download CV</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column - Image -->
+                    <div class="col-lg-6 col-md-12">
+                        <img src="static/img/ban.jpg" alt="Simon's Profile" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END Home Banner -->
+
+        <!-- START About Me -->
+        <section class="py-5 bg-light" id="about">
+            <div class="container">
+                <!-- Section Title -->
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <span class="badge bg-primary text-white mb-3"
+                            style="background-color: #00754c!important;">About Me</span>
+                        <h2 class="display-5 fw-bold">Described Briefly My Professional <br>Background Skills and
+                            Accomplishments</h2>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="row g-4">
+                    <!-- Profile Image -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="position-relative">
+                            <img src="static/img/bn1.jpg" alt="Simon Ogbanje" class="img-fluid rounded shadow-lg">
+                            <a href="#contact" class="btn btn-lg position-absolute bottom-0 start-0 m-3"
+                                style="background-color: #C9F31D; color: #00754c; font-weight: bold;">
+                                Hire Me <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bio -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="p-4 h-100" style="background-color: rgba(0, 117, 76, 0.05); border-radius: 10px;">
+                            <p class="lead fw-bold" style="color: #00754c;">
+                                Hi, I'm Simon Ogbanje, a professional web developer dedicated to crafting high-quality,
+                                responsive, and user-friendly web applications.
+                            </p>
+                            <p>
+                                With a strong focus on client satisfaction, I deliver efficient and scalable solutions
+                                tailored to meet your unique needs—on time and within budget.
+                            </p>
+                            <p>
+                                My expertise includes HTML, CSS, JavaScript, and Node.js, which I leverage to turn ideas
+                                into fully functional digital experiences.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="p-4 h-100" style="background-color: rgba(0, 117, 76, 0.05); border-radius: 10px;">
+                            <h4 class="mb-4" style="color: #00754c;">Skills</h4>
+                            <div class="skill-container">
+                                <div class="skill-item mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>HTML</h5>
+                                        <span class="skill-percent">90%</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar" role="progressbar"
+                                            style="width: 0%; background-color: #C9F31D;" data-width="90"></div>
+                                    </div>
+                                </div>
+                                <!-- Repeat for other skills -->
+                                <div class="skill-item mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>CSS</h5>
+                                        <span class="skill-percent">80%</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar" role="progressbar"
+                                            style="width: 0%; background-color: #C9F31D;" data-width="80"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>JavaScript</h5>
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar" role="progressbar"
+                                            style="width: 0%; background-color: #C9F31D;" data-width="85"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Bootstrap</h5>
+                                        <span class="skill-percent">75%</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar" role="progressbar"
+                                            style="width: 0%; background-color: #C9F31D;" data-width="75"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education & Experience -->
+                <div class="row mt-5 g-4">
+                    <!-- Education -->
+                    <div class="col-lg-6">
+                        <div class="p-4 h-100" style="background-color: rgba(0, 117, 76, 0.05); border-radius: 10px;">
+                            <h4 class="mb-4" style="color: #00754c;">Education</h4>
+                            <div class="timeline">
+                                <div class="timeline-item mb-4">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-2">
+                                            <span
+                                                class="badge rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width: 40px; height: 40px; background-color: #C9F31D; color: #00754c;">01</span>
+                                        </div>
+                                        <div class="col-10 ps-3">
+                                            <span class="text-muted">2005 - 2008</span>
+                                            <h5 class="mt-1">B.A Philosophy</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Repeat for other education items -->
+                                <div class="timeline-item mb-4">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-2">
+                                            <span
+                                                class="badge rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width: 40px; height: 40px; background-color: #C9F31D; color: #00754c;">02</span>
+                                        </div>
+                                        <div class="col-10 ps-3">
+                                            <span class="text-muted">2009 - 2018</span>
+                                            <h5 class="mt-1">Theology</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-2">
+                                            <span
+                                                class="badge rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width: 40px; height: 40px; background-color: #C9F31D; color: #00754c;">03</span>
+                                        </div>
+                                        <div class="col-10 ps-3">
+                                            <span class="text-muted">2019 - 2024</span>
+                                            <h5 class="mt-1">M.Ed Educational Philosophy</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="col-lg-6">
+                        <div class="p-4 h-100" style="background-color: rgba(0, 117, 76, 0.05); border-radius: 10px;">
+                            <h4 class="mb-4" style="color: #00754c;">Experience</h4>
+                            <div class="timeline">
+                                <div class="timeline-item mb-4">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-2">
+                                            <span
+                                                class="badge rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width: 40px; height: 40px; background-color: #C9F31D; color: #00754c;">01</span>
+                                        </div>
+                                        <div class="col-10 ps-3">
+                                            <span class="text-muted">January 2021 - 2022</span>
+                                            <h5 class="mt-1">Microsoft</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Repeat for other experience items -->
+                                <div class="timeline-item mb-4">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-2">
+                                            <span
+                                                class="badge rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width: 40px; height: 40px; background-color: #C9F31D; color: #00754c;">02</span>
+                                        </div>
+                                        <div class="col-10 ps-3">
+                                            <span class="text-muted">March 2022 - 2023</span>
+                                            <h5 class="mt-1">Google Inc</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-2">
+                                            <span
+                                                class="badge rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width: 40px; height: 40px; background-color: #C9F31D; color: #00754c;">03</span>
+                                        </div>
+                                        <div class="col-10 ps-3">
+                                            <span class="text-muted">June 2023 - 2024</span>
+                                            <h5 class="mt-1">Data Analytics</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END About Me -->
+    </main>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
