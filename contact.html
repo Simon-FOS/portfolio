@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Simon Ogbanje</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-green: #00754c;
+            --dark-green: #04452e;
+            --accent-yellow: #C9F31D;
+        }
+
+        .contact-card {
+            transition: all 0.3s ease;
+            border: none;
+            border-left: 4px solid var(--primary-green);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .bg-primary-green {
+            background-color: var(--primary-green);
+        }
+
+        .bg-dark-green {
+            background-color: var(--dark-green);
+        }
+
+        .bg-accent-light {
+            background-color: rgba(200, 243, 29, 0.2);
+        }
+
+        .text-primary-green {
+            color: var(--primary-green);
+        }
+
+        .text-accent-yellow {
+            color: var(--accent-yellow);
+        }
+
+        .btn-accent {
+            background-color: var(--accent-yellow);
+            color: var(--primary-green);
+            font-weight: bold;
+        }
+
+        .btn-accent:hover {
+            background-color: #b3d923;
+            color: var(--primary-green);
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 0.25rem rgba(0, 117, 76, 0.25);
+        }
+
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar (consistent with other pages) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand me-lg-5" href="index.html">
+                <img src="static/img/log.png" alt="Developer Logo" width="180" height="50"
+                    class="d-inline-block align-top rounded">
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto me-lg-4 mb-2 mb-lg-0">
+                    <li class="nav-item mx-lg-2 mx-xl-3">
+                        <a class="nav-link fw-bold" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item mx-lg-2 mx-xl-3">
+                        <a class="nav-link fw-bold" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item mx-lg-2 mx-xl-3">
+                        <a class="nav-link fw-bold" href="services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item mx-lg-2 mx-xl-3">
+                        <a class="nav-link fw-bold" href="portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item mx-lg-2 mx-xl-3">
+                        <a class="nav-link fw-bold active" aria-current="page" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+
+                <!-- Download CV Button -->
+                <div class="d-flex ms-lg-4">
+                    <a href="static/file/myCv-Simon.pdf" download class="btn btn-success fw-bold px-4 py-2"
+                        target="_blank">
+                        <i class="fas fa-download me-2"></i>DOWNLOAD CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5 bg-dark-green text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Let's <span class="text-accent-yellow">Connect</span></h1>
+                    <p class="lead mb-4">Have a project in mind or want to discuss potential opportunities? I'd love to
+                        hear from you.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contact-form" class="btn btn-accent btn-lg px-4">Send a Message</a>
+                        <a href="tel:+2347032665212" class="btn btn-outline-light btn-lg px-4">
+                            <i class="fas fa-phone me-2"></i>Call Me
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="static/img/bn2.jpg" alt="Contact Simon" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <!-- Email Card -->
+                <div class="col-md-4">
+                    <div class="p-4 h-100 contact-card bg-white">
+                        <div class="text-center mb-4" style="color: var(--primary-green); font-size: 2.5rem;">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="h4 text-center mb-3">Email Me</h3>
+                        <p class="text-center mb-4">For project inquiries, collaborations, or just to say hello.</p>
+                        <div class="text-center">
+                            <a href="mailto:ogbanjesi@gmail.com"
+                                class="btn btn-outline-primary-green">ogbanjesi@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call Card -->
+                <div class="col-md-4">
+                    <div class="p-4 h-100 contact-card bg-white">
+                        <div class="text-center mb-4" style="color: var(--primary-green); font-size: 2.5rem;">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3 class="h4 text-center mb-3">Call Me</h3>
+                        <p class="text-center mb-4">Available for calls during business hours (GMT+1).</p>
+                        <div class="text-center">
+                            <a href="tel:+2347032665212" class="btn btn-outline-primary-green">+234 703 266 5212</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Card -->
+                <div class="col-md-4">
+                    <div class="p-4 h-100 contact-card bg-white">
+                        <div class="text-center mb-4" style="color: var(--primary-green); font-size: 2.5rem;">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3 class="h4 text-center mb-3">Social Media</h3>
+                        <p class="text-center mb-4">Connect with me on professional networks.</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://linkedin.com/in/simon-ogbanje-1b43a1b6"
+                                class="btn btn-outline-primary btn-sm" target="_blank">
+                                <i class="fab fa-2x fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Simon-FOS" class="btn btn-outline-dark btn-sm" target="_blank">
+                                <i class="fab fa-2x fa-github"></i>
+                            </a>
+                            <a href="https://wa.me/2347032665212" class="btn btn-outline-success btn-sm"
+                                target="_blank">
+                                <i class="fab fa-2x fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5 bg-accent-light" id="contact-form">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-5">
+                            <div class="text-center mb-5">
+                                <span class="badge bg-primary-green text-white mb-3">Get In Touch</span>
+                                <h2 class="display-5 fw-bold mb-3">Send Me a Message</h2>
+                                <p class="lead">Fill out the form below and I'll get back to you within 24 hours.</p>
+                            </div>
+
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control form-control-lg" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control form-control-lg" id="email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control form-control-lg" id="subject" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Your Message</label>
+                                        <textarea class="form-control form-control-lg" id="message" rows="5"
+                                            required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="consent" required>
+                                            <label class="form-check-label" for="consent">
+                                                I consent to having my data collected and stored according to the <a
+                                                    href="#">Privacy Policy</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center mt-4">
+                                        <button type="submit" class="btn btn-accent btn-lg px-5">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="pe-lg-4">
+                        <span class="badge bg-primary-green text-white mb-3">My Location</span>
+                        <h2 class="display-5 fw-bold mb-4">Based in <span class="text-primary-green">Makurdi,
+                                Nigeria</span></h2>
+                        <p class="lead mb-4">Available for local and international projects.</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-map-marker-alt text-primary-green me-3" style="font-size: 1.5rem;"></i>
+                            <div>
+                                <h5 class="mb-0">Address</h5>
+                                <p class="mb-0">Makurdi, Benue State, Nigeria</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-clock text-primary-green me-3" style="font-size: 1.5rem;"></i>
+                            <div>
+                                <h5 class="mb-0">Working Hours</h5>
+                                <p class="mb-0">Monday - Friday: 9am - 5pm (GMT+1)</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-globe-africa text-primary-green me-3" style="font-size: 1.5rem;"></i>
+                            <div>
+                                <h5 class="mb-0">Service Area</h5>
+                                <p class="mb-0">Worldwide remote services available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252628.1223210693!2d8.38821745!3d7.732020499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1053735a3139f8e1%3A0xfa8a6a00a9a5a097!2sMakurdi!5e0!3m2!1sen!2sng!4v1620000000000!5m2!1sen!2sng"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary-green text-white">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">Ready to Start Your Project?</h2>
+                    <p class="lead mb-5">I'm currently available for freelance work. Let's discuss how I can help bring
+                        your ideas to life.</p>
+                    <a href="#contact-form" class="btn btn-accent btn-lg px-5">Get a Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (consistent with other pages) -->
+    <footer class="bg-black text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Contact Information -->
+                <div class="col-md-6">
+                    <h5 class="mb-4 text-white-50">Contact Information</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-2x fa-map-marker-alt me-3 text-white-50"></i>
+                            <span class="text-white">Makurdi, Nigeria</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-2x fa-phone-alt me-3 text-white-50"></i>
+                            <span class="text-white">+234 703 266 5212</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-2x fa-envelope me-3 text-white-50"></i>
+                            <a href="mailto:ogbanjesi@gmail.com"
+                                class="text-white text-decoration-none">ogbanjesi@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div class="col-md-6">
+                    <h5 class="mb-4 text-white-50">Connect With Me</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fab fa-2x fa-linkedin me-3 text-white-50"></i>
+                            <a href="https://linkedin.com/in/simon-ogbanje-1b43a1b6"
+                                class="text-white text-decoration-none">
+                                linkedin.com/in/simon-ogbanje-1b43a1b6
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fab fa-2x fa-github me-3 text-white-50"></i>
+                            <a href="https://github.com/Simon-FOS" class="text-white text-decoration-none">
+                                github.com/Simon-FOS
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fab fa-2x fa-whatsapp me-3 text-white-50"></i>
+                            <a href="https://wa.me/2347032665212" class="text-white text-decoration-none">
+                                WhatsApp Chat
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fab fa-2x fa-tiktok me-3 text-white-50"></i>
+                            <a href="https://www.tiktok.com/@fos_media" class="text-white text-decoration-none">
+                                fos_media
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <hr class="border-white-50 my-4">
+                    <p class="mb-0 text-white-50">© 2025 Simon Ogbanje. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

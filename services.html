@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Services | Simon Ogbanje</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-green: #00754c;
+            --dark-green: #04452e;
+            --accent-yellow: #C9F31D;
+        }
+
+        .service-card {
+            transition: all 0.3s ease;
+            border: none;
+            border-left: 4px solid var(--primary-green);
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .bg-primary-green {
+            background-color: var(--primary-green);
+        }
+
+        .bg-dark-green {
+            background-color: var(--dark-green);
+        }
+
+        .bg-accent-light {
+            background-color: rgba(200, 243, 29, 0.2);
+        }
+
+        .bg-service-card {
+            background-color: rgba(2, 156, 102, 0.354);
+        }
+
+        .text-primary-green {
+            color: var(--primary-green);
+        }
+
+        .text-accent-yellow {
+            color: var(--accent-yellow);
+        }
+
+        .btn-accent {
+            background-color: var(--accent-yellow);
+            color: var(--primary-green);
+            font-weight: bold;
+        }
+
+        .btn-accent:hover {
+            background-color: #b3d923;
+            color: var(--primary-green);
+        }
+
+        .icon-wrapper {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            background-color: var(--primary-green);
+            color: white;
+        }
+
+        .progress-bar-accent {
+            background-color: var(--accent-yellow);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar (matches your About page) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand me-lg-5" href="index.html">
+                <img src="static/img/log.png" alt="Developer Logo" width="180" height="50"
+                    class="d-inline-block align-top rounded">
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto me-lg-4 mb-2 mb-lg-0">
+                    <li class="nav-item mx-lg-2 mx-xl-3">
+                        <a class="nav-link fw-bold" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item mx-lg-2 mx-xl-3">
+                        <a class="nav-link fw-bold" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item mx-lg-2 mx-xl-3">
+                        <a class="nav-link fw-bold active" aria-current="page" href="services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item mx-lg-2 mx-xl-3">
+                        <a class="nav-link fw-bold" href="portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item mx-lg-2 mx-xl-3">
+                        <a class="nav-link fw-bold" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+
+                <!-- Download CV Button -->
+                <div class="d-flex ms-lg-4">
+                    <a href="static/file/myCv-Simon.pdf" download class="btn btn-success fw-bold px-4 py-2"
+                        target="_blank">
+                        <i class="fas fa-download me-2"></i>DOWNLOAD CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5 bg-dark-green text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">My <span class="text-accent-yellow">Services</span></h1>
+                    <p class="lead mb-4">Comprehensive web solutions tailored to elevate your digital presence and drive
+                        business growth.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contact" class="btn btn-accent btn-lg px-4">Get a Free Quote</a>
+                        <a href="portfolio.html" class="btn btn-outline-light btn-lg px-4">View Portfolio</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="static/img/cn4.jpg" alt="Web Services" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-5 bg-accent-light">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <span class="badge bg-primary-green text-white mb-3">What I Offer</span>
+                    <h2 class="display-5 fw-bold">Complete <span class="text-primary-green">Web Solutions</span></h2>
+                    <p class="lead">From stunning designs to powerful functionality, I deliver exceptional results</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Design Services -->
+                <div class="col-lg-4">
+                    <div class="p-4 h-100 service-card bg-white">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-paint-brush fa-2x"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Design Services</h3>
+                        <img src="static/img/dan1.jpg" alt="Web Design" class="img-fluid rounded mb-3">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Custom Website Design
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Responsive Web Design
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Landing Page Design
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Redesign &
+                                Modernization</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Wireframing &
+                                Prototyping</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Branding & Visual
+                                Identity</li>
+                        </ul>
+                        <a href="#design-services" class="btn btn-outline-primary-green mt-3">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Development Services -->
+                <div class="col-lg-4">
+                    <div class="p-4 h-100 service-card bg-white">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-code fa-2x"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Development Services</h3>
+                        <img src="static/img/web4.png" alt="Web Development" class="img-fluid rounded mb-3">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Front-End Development
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Back-End Development
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Full-Stack Development
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> E-Commerce Development
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> CMS Development</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Web App Development
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> API Integration</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Progressive Web Apps
+                            </li>
+                        </ul>
+                        <a href="#dev-services" class="btn btn-outline-primary-green mt-3">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Additional Services -->
+                <div class="col-lg-4">
+                    <div class="p-4 h-100 service-card bg-white">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-cogs fa-2x"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Additional Services</h3>
+                        <img src="static/img/web3.png" alt="Additional Services" class="img-fluid rounded mb-3">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> SEO Optimization</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Website Maintenance
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Performance
+                                Optimization</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Website Security</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Accessibility Audits
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i> Content Management
+                                Training</li>
+                        </ul>
+                        <a href="#additional-services" class="btn btn-outline-primary-green mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services Section -->
+    <section class="py-5" id="design-services">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <span class="badge bg-primary-green text-white mb-3">Design Services</span>
+                    <h2 class="display-5 fw-bold">Creating <span class="text-primary-green">Beautiful Experiences</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row g-4 align-items-center mb-5">
+                <div class="col-lg-6">
+                    <img src="static/img/web1.png" alt="Design Process" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-4">
+                        <h3 class="h2 mb-4">Design That Converts</h3>
+                        <p class="lead">I create visually stunning, user-friendly designs that not only look great but
+                            also drive results.</p>
+                        <p>Every design begins with understanding your business goals and target audience. Through
+                            careful planning and creative execution, I craft digital experiences that engage visitors
+                            and convert them into customers.</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary-green me-2"></i> Mobile-first
+                                responsive design</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary-green me-2"></i> UI/UX best
+                                practices</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary-green me-2"></i>
+                                Conversion-focused layouts</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary-green me-2"></i>
+                                Brand-consistent visuals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 h-100 bg-service-card rounded">
+                        <div class="icon-wrapper mx-auto mb-3">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Custom Design</h4>
+                        <p class="text-center">Tailored designs that reflect your unique brand identity and business
+                            objectives.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 h-100 bg-service-card rounded">
+                        <div class="icon-wrapper mx-auto mb-3">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Responsive Design</h4>
+                        <p class="text-center">Flawless experiences across all devices from smartphones to desktops.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 h-100 bg-service-card rounded">
+                        <div class="icon-wrapper mx-auto mb-3">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Landing Pages</h4>
+                        <p class="text-center">High-converting pages designed to maximize your marketing campaigns.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 h-100 bg-service-card rounded">
+                        <div class="icon-wrapper mx-auto mb-3">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Redesigns</h4>
+                        <p class="text-center">Modernizing outdated sites with fresh designs and improved functionality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Services Section -->
+    <section class="py-5 bg-accent-light" id="dev-services">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <span class="badge bg-primary-green text-white mb-3">Development Services</span>
+                    <h2 class="display-5 fw-bold">Powerful <span class="text-primary-green">Web Development</span></h2>
+                </div>
+            </div>
+
+            <div class="row g-4 align-items-center mb-5 flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <img src="static/img/web2.jpg" alt="Development Process" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-lg-6">
+                    <div class="pe-lg-4">
+                        <h3 class="h2 mb-4">Robust Technical Solutions</h3>
+                        <p class="lead">I build fast, secure, and scalable websites and applications using modern
+                            technologies.</p>
+                        <p>From simple brochure sites to complex web applications, I develop solutions that meet your
+                            technical requirements while providing an exceptional user experience. My code is clean,
+                            well-documented, and follows industry best practices.</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary-green me-2"></i> Modern
+                                frameworks and libraries</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary-green me-2"></i> Secure coding
+                                practices</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary-green me-2"></i> Performance
+                                optimization</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary-green me-2"></i> Scalable
+                                architecture</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 h-100 bg-white service-card">
+                        <h4 class="mb-3"><i class="fas fa-laptop-code text-primary-green me-2"></i> Front-End</h4>
+                        <p>Interactive user interfaces built with HTML5, CSS3, JavaScript, and modern frameworks like
+                            React and Vue.js.</p>
+                        <div class="skill-item mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>HTML5/CSS3</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar progress-bar-accent" role="progressbar" style="width: 95%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar progress-bar-accent" role="progressbar" style="width: 85%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>React</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar progress-bar-accent" role="progressbar" style="width: 80%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 h-100 bg-white service-card">
+                        <h4 class="mb-3"><i class="fas fa-server text-primary-green me-2"></i> Back-End</h4>
+                        <p>Powerful server-side logic, databases, and API integrations using Node.js, Express, MongoDB,
+                            and more.</p>
+                        <div class="skill-item mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>Node.js</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar progress-bar-accent" role="progressbar" style="width: 85%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>Express</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar progress-bar-accent" role="progressbar" style="width: 80%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>MongoDB</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar progress-bar-accent" role="progressbar" style="width: 75%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 h-100 bg-white service-card">
+                        <h4 class="mb-3"><i class="fas fa-shopping-cart text-primary-green me-2"></i> E-Commerce</h4>
+                        <p>Complete online store solutions with WooCommerce, Shopify, or custom-built platforms tailored
+                            to your needs.</p>
+                        <div class="skill-item mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>WooCommerce</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar progress-bar-accent" role="progressbar" style="width: 85%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>Shopify</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar progress-bar-accent" role="progressbar" style="width: 75%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>Payment Gateways</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar progress-bar-accent" role="progressbar" style="width: 80%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services Section -->
+    <section class="py-5" id="additional-services">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <span class="badge bg-primary-green text-white mb-3">Support Services</span>
+                    <h2 class="display-5 fw-bold">Beyond <span class="text-primary-green">Development</span></h2>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 h-100 bg-white service-card">
+                        <div class="icon-wrapper mb-3">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>SEO Optimization</h4>
+                        <p>Improve your search engine rankings with technical SEO audits, on-page optimization, and
+                            content strategy.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-primary-green me-2"></i> Keyword research</li>
+                            <li><i class="fas fa-check text-primary-green me-2"></i> Meta tag optimization</li>
+                            <li><i class="fas fa-check text-primary-green me-2"></i> Site speed improvements</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 h-100 bg-white service-card">
+                        <div class="icon-wrapper mb-3">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Website Security</h4>
+                        <p>Protect your website from threats with SSL certificates, malware scanning, and security
+                            hardening.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-primary-green me-2"></i> SSL implementation</li>
+                            <li><i class="fas fa-check text-primary-green me-2"></i> Security audits</li>
+                            <li><i class="fas fa-check text-primary-green me-2"></i> Regular backups</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 h-100 bg-white service-card">
+                        <div class="icon-wrapper mb-3">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4>Performance Optimization</h4>
+                        <p>Make your website blazing fast with image optimization, caching strategies, and code
+                            minification.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-primary-green me-2"></i> Page speed analysis</li>
+                            <li><i class="fas fa-check text-primary-green me-2"></i> Performance tuning</li>
+                            <li><i class="fas fa-check text-primary-green me-2"></i> CDN integration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 h-100 bg-white service-card">
+                        <div class="icon-wrapper mb-3">
+                            <i class="fas fa-universal-access"></i>
+                        </div>
+                        <h4>Accessibility Audits</h4>
+                        <p>Ensure your website is usable by everyone with WCAG compliance testing and remediation.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-primary-green me-2"></i> Screen reader testing</li>
+                            <li><i class="fas fa-check text-primary-green me-2"></i> Color contrast analysis</li>
+                            <li><i class="fas fa-check text-primary-green me-2"></i> Keyboard navigation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 h-100 bg-white service-card">
+                        <div class="icon-wrapper mb-3">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Website Maintenance</h4>
+                        <p>Keep your website running smoothly with regular updates, security patches, and content
+                            changes.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-primary-green me-2"></i> Software updates</li>
+                            <li><i class="fas fa-check text-primary-green me-2"></i> Content updates</li>
+                            <li><i class="fas fa-check text-primary-green me-2"></i> Bug fixes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 h-100 bg-white service-card">
+                        <div class="icon-wrapper mb-3">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Training & Support</h4>
+                        <p>Learn to manage your website with personalized training sessions and documentation.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-primary-green me-2"></i> CMS training</li>
+                            <li><i class="fas fa-check text-primary-green me-2"></i> Documentation</li>
+                            <li><i class="fas fa-check text-primary-green me-2"></i> Ongoing support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-5 bg-dark-green text-white">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <span class="badge text-white mb-3" style="background-color: #C9F31D; color: #00754c !important;">My
+                        Process</span>
+                    <h2 class="display-5 fw-bold">How I <span class="text-accent-yellow">Work</span></h2>
+                    <p class="lead">A structured approach to delivering exceptional results</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 text-center h-100 bg-primary-green rounded">
+                        <div class="mb-3" style="color: #C9F31D; font-size: 2.5rem;">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Discovery</h4>
+                        <p>Understanding your goals, audience, and requirements through detailed discussions.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 text-center h-100 bg-primary-green rounded">
+                        <div class="mb-3" style="color: #C9F31D; font-size: 2.5rem;">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <h4>Planning</h4>
+                        <p>Creating wireframes, architecture, and a detailed project roadmap.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 text-center h-100 bg-primary-green rounded">
+                        <div class="mb-3" style="color: #C9F31D; font-size: 2.5rem;">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Development</h4>
+                        <p>Building your solution with clean, efficient, and maintainable code.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 text-center h-100 bg-primary-green rounded">
+                        <div class="mb-3" style="color: #C9F31D; font-size: 2.5rem;">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>Launch</h4>
+                        <p>Deployment, testing, and ongoing support to ensure success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-accent-light">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <img src="static/img/cn1.jpg" alt="Simon Working" class="img-fluid rounded-circle mb-4"
+                        style="width: 150px; height: 150px; object-fit: cover;">
+                    <h2 class="display-5 fw-bold mb-4">Ready to Start Your Project?</h2>
+                    <p class="lead mb-5">I'm currently available for freelance work. Let's discuss how I can help bring
+                        your ideas to life.</p>
+                    <a href="contact.html" class="btn btn-accent btn-lg px-5">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (matches your About page) -->
+    <footer class="bg-black text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Contact Information -->
+                <div class="col-md-6">
+                    <h5 class="mb-4 text-white-50">Contact Information</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-2x fa-map-marker-alt me-3 text-white-50"></i>
+                            <span class="text-white">Makurdi, Nigeria</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-2x fa-phone-alt me-3 text-white-50"></i>
+                            <span class="text-white">+234 703 266 5212</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-2x fa-envelope me-3 text-white-50"></i>
+                            <a href="mailto:ogbanjesi@gmail.com"
+                                class="text-white text-decoration-none">ogbanjesi@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div class="col-md-6">
+                    <h5 class="mb-4 text-white-50">Connect With Me</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fab fa-2x fa-linkedin me-3 text-white-50"></i>
+                            <a href="https://linkedin.com/in/simon-ogbanje-1b43a1b6"
+                                class="text-white text-decoration-none">
+                                linkedin.com/in/simon-ogbanje-1b43a1b6
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fab fa-2x fa-github me-3 text-white-50"></i>
+                            <a href="https://github.com/Simon-FOS" class="text-white text-decoration-none">
+                                github.com/Simon-FOS
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fab fa-2x fa-whatsapp me-3 text-white-50"></i>
+                            <a href="https://wa.me/2347032665212" class="text-white text-decoration-none">
+                                WhatsApp Chat
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fab fa-2x fa-tiktok me-3 text-white-50"></i>
+                            <a href="https://www.tiktok.com/@fos_media" class="text-white text-decoration-none">
+                                fos_media
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <hr class="border-white-50 my-4">
+                    <p class="mb-0 text-white-50">© 2025 Simon Ogbanje. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
