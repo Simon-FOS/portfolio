@@ -218,34 +218,46 @@
                                 <p class="lead">Fill out the form below and I'll get back to you within 24 hours.</p>
                             </div>
 
-                            <form>
+                            <form action="https://formspree.io/f/xqkrgvny" method="POST">
+                                <!-- Add this hidden field to prevent JSON format requirement -->
+                                <input type="hidden" name="_format" value="plain">
+
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <label for="name" class="form-label">Your Name</label>
-                                        <input type="text" class="form-control form-control-lg" id="name" required>
+                                        <!-- Add name attribute for Formspree -->
+                                        <input type="text" class="form-control form-control-lg" id="name" name="name"
+                                            required>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="email" class="form-label">Email Address</label>
-                                        <input type="email" class="form-control form-control-lg" id="email" required>
+                                        <!-- Use _replyto as name for automatic reply handling -->
+                                        <input type="email" class="form-control form-control-lg" id="email"
+                                            name="_replyto" required>
                                     </div>
                                     <div class="col-12">
                                         <label for="subject" class="form-label">Subject</label>
-                                        <input type="text" class="form-control form-control-lg" id="subject" required>
+                                        <input type="text" class="form-control form-control-lg" id="subject"
+                                            name="subject" required>
                                     </div>
                                     <div class="col-12">
                                         <label for="message" class="form-label">Your Message</label>
-                                        <textarea class="form-control form-control-lg" id="message" rows="5"
-                                            required></textarea>
+                                        <textarea class="form-control form-control-lg" id="message" name="message"
+                                            rows="5" required></textarea>
                                     </div>
-                                    <div class="col-12">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="consent" required>
-                                            <label class="form-check-label" for="consent">
-                                                I consent to having my data collected and stored according to the <a
-                                                    href="#">Privacy Policy</a>
-                                            </label>
-                                        </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" id="privacyConsent"
+                                            name="privacyConsent" required>
+                                        <label class="form-check-label" for="privacyConsent">
+                                            I agree to the <a href="privacy-policy.html" target="_blank">Privacy
+                                                Policy</a>
+                                        </label>
                                     </div>
+                                    <!-- Optional: Add redirect after submission -->
+                                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                                    <!-- Honeypot spam prevention -->
+                                    <input type="text" name="_gotcha" style="display:none">
+
                                     <div class="col-12 text-center mt-4">
                                         <button type="submit" class="btn btn-accent btn-lg px-5">Send Message</button>
                                     </div>
@@ -378,7 +390,13 @@
             <div class="row mt-4">
                 <div class="col-12 text-center">
                     <hr class="border-white-50 my-4">
-                    <p class="mb-0 text-white-50">© 2025 Simon Ogbanje. All rights reserved.</p>
+                    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+                        <p class="mb-0 text-white-50">© 2025 Simon Ogbanje. All rights reserved.</p>
+                        <span class="d-none d-md-block text-white-50">|</span>
+                        <a href="privacy-policy.html" class="text-white-50 text-decoration-none hover-underline">
+                            Privacy Policy
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
