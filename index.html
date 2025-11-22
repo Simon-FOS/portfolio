@@ -20,10 +20,27 @@
 
     <!-- Custom CSS (only for essential styles not available in Bootstrap) -->
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .progress {
+            height: 8px;
+            background: #e3e3e3;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-bar.skill-bar {
+            width: 0%;
+            height: 100%;
+            background-color: #C9F31D;
+            transition: width 2s ease-in-out;
+        }
+    </style>
+
 </head>
 
 <body>
-    <!-- Navigation Bar -->
+    <!-- NAVIGATION Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
         <div class="container">
             <!-- Brand Logo -->
@@ -42,7 +59,7 @@
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <ul class="navbar-nav ms-auto me-lg-4 mb-2 mb-lg-0">
                     <li class="nav-item mx-lg-2 mx-xl-3">
-                        <a class="nav-link fw-bold active" aria-current="page" href="index.html">HOME</a>
+                        <a class="nav-link fw-bold" aria-current="page" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item mx-lg-2 mx-xl-3">
                         <a class="nav-link fw-bold" href="about.html">ABOUT</a>
@@ -60,7 +77,7 @@
 
                 <!-- Download CV Button -->
                 <div class="d-flex ms-lg-4">
-                    <a href="static/file/myCv-Simon.pdf" download class="btn btn-success fw-bold px-4 py-2"
+                    <a href="static/file/cv-simono.pdf" download class="btn btn-success fw-bold px-4 py-2"
                         target="_blank">
                         <i class="fas fa-download me-2"></i>DOWNLOAD CV
                     </a>
@@ -83,13 +100,18 @@
                             </h2>
                             <p class="lead mb-4">
                                 Solution-oriented mindset, problem-solving enthusiasm, positive attitude
-                                towards challenges, overcoming obstacles with enthusiasm.
+                                towards challenges, overcoming obstacles with passion and enthusiasm.
                             </p>
                             <div class="d-flex flex-wrap gap-3">
-                                <a href="#contact-form" class="btn btn-lg px-4 fw-bold"
+                                <a href="contact.html#contact-form" class="btn btn-lg px-4 fw-bold"
                                     style="background-color: #C9F31D; color: #00754c;">Get in Touch</a>
-                                <a href="#" class="btn btn-outline-light btn-lg px-4">Download CV</a>
+
+                                <a href="static/file/cv-simono.pdf" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-outline-light btn-lg px-4">
+                                    View CV
+                                </a>
                             </div>
+
                         </div>
                     </div>
 
@@ -120,81 +142,118 @@
                     <!-- Profile Image -->
                     <div class="col-lg-4 col-md-6">
                         <div class="position-relative">
-                            <img src="static/img/bn1.jpg" alt="Simon Ogbanje" class="img-fluid rounded shadow-lg">
-                            <a href="#contact" class="btn btn-lg position-absolute bottom-0 start-0 m-3"
+                            <img src="static/img/wd.jpg" alt="Simon Ogbanje" class="img-fluid rounded shadow-lg">
+
+                            <a href="contact.html#contact-form"
+                                class="btn btn-lg position-absolute bottom-0 start-0 m-3"
                                 style="background-color: #C9F31D; color: #00754c; font-weight: bold;">
                                 Hire Me <i class="fas fa-arrow-right ms-2"></i>
                             </a>
                         </div>
+
                     </div>
 
                     <!-- Bio - Changed alpha from 0.05 to 0.2 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="p-4 h-100" style="background-color: rgba(2, 114, 75, 0.425); border-radius: 10px;">
-                            <p class="lead fw-bold" style="color: #00754c;">
-                                Hi, I'm Simon Ogbanje, a professional web developer dedicated to crafting high-quality,
+                            <p class="lead fw-bold" style="color: #00754c; text-align: justify;">
+                                Hi, I'm Simon Ogbanje, a professional web developer committed to building high-quality,
                                 responsive, and user-friendly web applications.
                             </p>
-                            <p>
-                                With a strong focus on client satisfaction, I deliver efficient and scalable solutions
-                                tailored to meet your unique needs—on time and within budget.
+                            <p style="text-align: justify;">
+                                I work as a freelance developer, tech educator, and also serve as the Director of
+                                Sidasoft Technologies. I teach people how to use modern digital tools, maintain
+                                websites, and optimize online platforms for improved performance, speed, and user
+                                engagement.
                             </p>
-                            <p>
-                                My expertise includes HTML, CSS, JavaScript, and Node.js, which I leverage to turn ideas
-                                into fully functional digital experiences.
+                            <p style="text-align: justify;">
+                                My technical expertise includes HTML, CSS, JavaScript, Express.js, and Node.js. I use
+                                these skills to develop scalable systems, enhance existing websites, and deliver
+                                seamless digital experiences tailored to your needs.
                             </p>
                         </div>
                     </div>
 
-                    <!-- Skills - Changed alpha from 0.05 to 0.2 -->
+
+
+                    <!-- Skills Section -->
                     <div class="col-lg-4 col-md-12">
-                        <div class="p-4 h-100" style="background-color: rgba(5, 125, 83, 0.406); border-radius: 10px;">
-                            <h4 class="mb-4" style="color: #00754c;">Skills</h4>
+                        <div class="p-4 h-100" style="background-color: rgba(5, 125, 83, 0.2); border-radius: 10px;">
+                            <h4 class="mb-4" style="color: #00754c; font-weight: 700;">Skills</h4>
+
                             <div class="skill-container">
+
+                                <!-- HTML -->
                                 <div class="skill-item mb-3">
                                     <div class="d-flex justify-content-between">
-                                        <h5>HTML</h5>
+                                        <span class="fw-semibold">HTML</span>
                                         <span class="skill-percent">90%</span>
                                     </div>
-                                    <div class="progress" style="height: 8px;">
-                                        <div class="progress-bar" role="progressbar"
-                                            style="width: 0%; background-color: #C9F31D;" data-width="90"></div>
+                                    <div class="progress">
+                                        <div class="progress-bar skill-bar" data-width="90"></div>
                                     </div>
                                 </div>
-                                <!-- Repeat for other skills -->
+
+                                <!-- CSS -->
                                 <div class="skill-item mb-3">
                                     <div class="d-flex justify-content-between">
-                                        <h5>CSS</h5>
+                                        <span class="fw-semibold">CSS</span>
                                         <span class="skill-percent">80%</span>
                                     </div>
-                                    <div class="progress" style="height: 8px;">
-                                        <div class="progress-bar" role="progressbar"
-                                            style="width: 0%; background-color: #C9F31D;" data-width="80"></div>
+                                    <div class="progress">
+                                        <div class="progress-bar skill-bar" data-width="80"></div>
                                     </div>
                                 </div>
+
+                                <!-- JavaScript -->
                                 <div class="skill-item mb-3">
                                     <div class="d-flex justify-content-between">
-                                        <h5>JavaScript</h5>
+                                        <span class="fw-semibold">JavaScript</span>
                                         <span class="skill-percent">85%</span>
                                     </div>
-                                    <div class="progress" style="height: 8px;">
-                                        <div class="progress-bar" role="progressbar"
-                                            style="width: 0%; background-color: #C9F31D;" data-width="85"></div>
+                                    <div class="progress">
+                                        <div class="progress-bar skill-bar" data-width="85"></div>
                                     </div>
                                 </div>
+
+                                <!-- Bootstrap -->
                                 <div class="skill-item mb-3">
                                     <div class="d-flex justify-content-between">
-                                        <h5>Bootstrap</h5>
+                                        <span class="fw-semibold">Bootstrap</span>
                                         <span class="skill-percent">75%</span>
                                     </div>
-                                    <div class="progress" style="height: 8px;">
-                                        <div class="progress-bar" role="progressbar"
-                                            style="width: 0%; background-color: #C9F31D;" data-width="75"></div>
+                                    <div class="progress">
+                                        <div class="progress-bar skill-bar" data-width="75"></div>
                                     </div>
                                 </div>
+
+                                <!-- Node.js -->
+                                <div class="skill-item mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="fw-semibold">Node.js</span>
+                                        <span class="skill-percent">90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar skill-bar" data-width="90"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Express.js -->
+                                <div class="skill-item mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="fw-semibold">Express.js</span>
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar skill-bar" data-width="85"></div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
+
+
                 </div>
 
                 <!-- Education & Experience -->
@@ -274,18 +333,32 @@
                                                 style="width: 40px; height: 40px; background-color: #C9F31D; color: #00754c;">01</span>
                                         </div>
                                         <div class="col-10 ps-3">
-                                            <span class="text-muted">February 2025 - Date</span>
-                                            <h5 class="mt-1">BuildSpace, Makurdi</h5>
+                                            <span class="text-muted">June 2025 - Present</span>
+                                            <h5 class="mt-1">Sidasoft Technologies, Makurdi</h5>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Repeat for other experience items -->
+                                <!--  other experience items -->
                                 <div class="timeline-item mb-4">
                                     <div class="row g-0 align-items-center">
                                         <div class="col-2">
                                             <span
                                                 class="badge rounded-circle d-flex align-items-center justify-content-center"
                                                 style="width: 40px; height: 40px; background-color: #C9F31D; color: #00754c;">02</span>
+                                        </div>
+                                        <div class="col-10 ps-3">
+                                            <span class="text-muted">February 2025 - October 2025</span>
+                                            <h5 class="mt-1">BuildSpace, Makurdi</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  other experience items -->
+                                <div class="timeline-item mb-4">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-2">
+                                            <span
+                                                class="badge rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width: 40px; height: 40px; background-color: #C9F31D; color: #00754c;">03</span>
                                         </div>
                                         <div class="col-10 ps-3">
                                             <span class="text-muted">2021 - 2025</span>
@@ -298,7 +371,7 @@
                                         <div class="col-2">
                                             <span
                                                 class="badge rounded-circle d-flex align-items-center justify-content-center"
-                                                style="width: 40px; height: 40px; background-color: #C9F31D; color: #00754c;">03</span>
+                                                style="width: 40px; height: 40px; background-color: #C9F31D; color: #00754c;">04</span>
                                         </div>
                                         <div class="col-10 ps-3">
                                             <span class="text-muted">February 2025 - Date</span>
@@ -325,29 +398,45 @@
                             <img src="static/img/screenecom.png" class="card-img-top" alt="Project 1">
                             <div class="card-body">
                                 <h5 class="card-title">A Spa & E-Commerce Website</h5>
-                                <p class="card-text">A fully responsive online store with product catalog and checkout
-                                    system. check: https//:madepetal.com</p>
+                                <p class="card-text" style="text-align: justify;">
+                                    A fully responsive online store for MadePetal Clinic & Spa, featuring a sleek
+                                    product catalog, seamless checkout system, and an enjoyable shopping experience for
+                                    customers.
+                                </p>
+
                             </div>
                             <div class="card-footer bg-white border-0">
-                                <a href="#" class="btn w-100" style="background-color: #C9F31D;">View Project</a>
+                                <a href="https://madepetal.com" target="_blank" class="btn w-100"
+                                    style="background-color: #C9F31D;">
+                                    View Project
+                                </a>
                             </div>
+
                         </div>
                     </div>
 
                     <!-- Project 2 -->
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="card h-100">
-                            <img src="static/img/screenmade.png" class="card-img-top" alt="Project 2">
+                            <img src="static/img/sida2.png" class="card-img-top" alt="Project 2">
                             <div class="card-body">
-                                <h5 class="card-title">Task Management App</h5>
-                                <p class="card-text">A productivity application for organizing and tracking daily tasks.
+                                <h5 class="card-title">Course Management Application</h5>
+                                <p class="card-text" style="text-align: justify;">
+                                    A streamlined course management system built for Sidasoft Technologies.
+                                    It enables easy organization, scheduling, and tracking of courses, improving
+                                    productivity and simplifying daily administrative tasks.
                                 </p>
+
                             </div>
                             <div class="card-footer bg-white border-0">
-                                <a href="#" class="btn w-100" style="background-color: #C9F31D;">View Project</a>
+                                <a href="https://sidasoft.org" target="_blank" class="btn w-100"
+                                    style="background-color: #C9F31D;">
+                                    View Project
+                                </a>
                             </div>
                         </div>
                     </div>
+
 
                     <!-- Project 3 -->
                     <div class="col-12 col-md-6 col-lg-3">
@@ -355,10 +444,17 @@
                             <img src="static/img/screenport.png" class="card-img-top" alt="Project 3">
                             <div class="card-body">
                                 <h5 class="card-title">Portfolio Website</h5>
-                                <p class="card-text">A personal portfolio showcasing my work and skills.</p>
+                                <p class="card-text" style="text-align: justify;">
+                                    A professional personal portfolio highlighting my web development projects,
+                                    technical skills, creative design solutions, and achievements, providing visitors
+                                    with an engaging and comprehensive overview of my work.
+                                </p>
                             </div>
                             <div class="card-footer bg-white border-0">
-                                <a href="#" class="btn w-100" style="background-color: #C9F31D;">View Project</a>
+                                <a href="https://sidasoft.org" target="_blank" class="btn w-100"
+                                    style="background-color: #C9F31D;">
+                                    View Project
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -366,14 +462,21 @@
                     <!-- Project 4 -->
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="card h-100">
-                            <img src="https://via.placeholder.com/300x200/00754c/ffffff?text=Project+4"
-                                class="card-img-top" alt="Project 4">
+                            <img src="/static/img/aim1.png" class="card-img-top" alt="Project 4">
                             <div class="card-body">
-                                <h5 class="card-title">Weather Dashboard</h5>
-                                <p class="card-text">Real-time weather information with 5-day forecast.</p>
+                                <h5 class="card-title">Institution Website</h5>
+                                <p class="card-text" style="text-align: justify;">
+                                    A fully responsive website developed for Augustinian Institute Makurdi, designed to
+                                    provide students, staff, and visitors with easy access to information, resources,
+                                    and online services.
+                                </p>
                             </div>
+
                             <div class="card-footer bg-white border-0">
-                                <a href="#" class="btn w-100" style="background-color: #C9F31D;">View Project</a>
+                                <a href="https://aimakurdi.ng" target="_blank" class="btn w-100"
+                                    style="background-color: #C9F31D;">
+                                    View Project
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -401,11 +504,11 @@
                     <ul class="list-unstyled">
                         <li class="mb-3">
                             <i class="fas fa-2x fa-map-marker-alt me-3 text-white-50"></i>
-                            <span class="text-white">Makurdi, Nigeria</span>
+                            <span class="text-white">Sidasoft Technologies Makurdi, Benue State, Nigeria</span>
                         </li>
                         <li class="mb-3">
                             <i class="fas fa-2x fa-phone-alt me-3 text-white-50"></i>
-                            <span class="text-white">+234 703 266 5212</span>
+                            <span class="text-white">+2348131479729</span>
                         </li>
                         <li class="mb-3">
                             <i class="fas fa-2x fa-envelope me-3 text-white-50"></i>
@@ -434,14 +537,14 @@
                         </li>
                         <li class="mb-3">
                             <i class="fab fa-2x fa-whatsapp me-3 text-white-50"></i>
-                            <a href="https://wa.me/2347032665212" class="text-white text-decoration-none">
+                            <a href="https://wa.me/2348131479729" class="text-white text-decoration-none">
                                 WhatsApp Chat
                             </a>
                         </li>
                         <li class="mb-3">
                             <i class="fab fa-2x fa-tiktok me-3 text-white-50"></i>
-                            <a href="https://www.tiktok.com/@fos_media" class="text-white text-decoration-none">
-                                fos_media
+                            <a href="https://www.tiktok.com/@sidasoft" class="text-white text-decoration-none">
+                                Sidasoft
                             </a>
                         </li>
                     </ul>
@@ -464,7 +567,27 @@
         </div>
     </footer>
 
+    <!-- ===================== JAVASCRIPT  ===================== -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const skillBars = document.querySelectorAll(".skill-bar");
 
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        skillBars.forEach(bar => {
+                            const targetWidth = bar.getAttribute("data-width");
+                            bar.style.width = targetWidth + "%";
+                        });
+                        observer.disconnect();
+                    }
+                });
+            });
+
+            observer.observe(document.querySelector(".skill-container"));
+        });
+    </script>
 </body>
+
 
 </html>

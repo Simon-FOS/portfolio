@@ -110,7 +110,7 @@
 </head>
 
 <body>
-    <!-- Navigation Bar -->
+    <!-- NAVIGATION Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
         <div class="container">
             <!-- Brand Logo -->
@@ -129,7 +129,7 @@
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <ul class="navbar-nav ms-auto me-lg-4 mb-2 mb-lg-0">
                     <li class="nav-item mx-lg-2 mx-xl-3">
-                        <a class="nav-link fw-bold active" aria-current="page" href="index.html">HOME</a>
+                        <a class="nav-link fw-bold" aria-current="page" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item mx-lg-2 mx-xl-3">
                         <a class="nav-link fw-bold" href="about.html">ABOUT</a>
@@ -147,7 +147,7 @@
 
                 <!-- Download CV Button -->
                 <div class="d-flex ms-lg-4">
-                    <a href="static/file/myCv-Simon.pdf" download class="btn btn-success fw-bold px-4 py-2"
+                    <a href="static/file/cv-simono.pdf" download class="btn btn-success fw-bold px-4 py-2"
                         target="_blank">
                         <i class="fas fa-download me-2"></i>DOWNLOAD CV
                     </a>
@@ -165,12 +165,17 @@
                     <p class="lead mb-4">A showcase of my professional projects, demonstrating my skills and experience
                         in web development and design.</p>
                     <div class="d-flex flex-wrap gap-3">
-                        <a href="#contact" class="btn btn-accent btn-lg px-4">Hire Me</a>
-                        <a href="services.html" class="btn btn-outline-light btn-lg px-4">View Services</a>
+                        <a href="contact.html#contact-form" class="btn btn-lg px-4 fw-bold"
+                            style="background-color: #C9F31D; color: #00754c;">Hire Me</a>
+
+                        <a href="static/file/cv-simono.pdf" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-light btn-lg px-4">
+                            View CV
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="static/img/cn4.jpg" alt="Portfolio Projects" class="img-fluid rounded shadow-lg">
+                    <img src="static/img/wd.jpg" alt="Portfolio Projects" class="img-fluid rounded shadow-lg">
                 </div>
             </div>
         </div>
@@ -200,15 +205,15 @@
             <!-- Portfolio Grid -->
             <div class="row g-4 portfolio-grid">
                 <!-- Project 1 -->
-                <div class="col-md-6 col-lg-4 portfolio-item" data-category="web">
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="ecommerce">
                     <div class="card project-card h-100">
-                        <img src="static/img/web1.png" class="card-img-top project-img" alt="E-Commerce Website">
+                        <img src="static/img/madep1.png" class="card-img-top project-img" alt="E-Commerce Website">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span class="badge bg-primary-green">Web Development</span>
-                                <small class="text-muted">2024</small>
+                                <span class="badge bg-primary-green">E-Commerce</span>
+                                <small class="text-muted">2025</small>
                             </div>
-                            <h5 class="card-title">Modern E-Commerce Platform</h5>
+                            <h5 class="card-title">Modern Spa & E-Commerce Platform</h5>
                             <p class="card-text">A full-featured online store with product management, shopping cart,
                                 and secure checkout.</p>
                             <div class="mb-3">
@@ -216,64 +221,76 @@
                                 <span class="tech-badge">CSS3</span>
                                 <span class="tech-badge">JavaScript</span>
                                 <span class="tech-badge">Node.js</span>
-                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">Express</span>
                             </div>
                         </div>
                         <div class="card-footer bg-white border-0">
-                            <a href="#" class="btn btn-sm btn-accent me-2">View Project</a>
-                            <a href="#" class="btn btn-sm btn-outline-primary-green">Case Study</a>
+                            <a href="https://madepetal.com" target="_blank" class="btn w-100"
+                                style="background-color: #C9F31D;">
+                                View Project
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="col-md-6 col-lg-4 portfolio-item" data-category="design">
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="web">
                     <div class="card project-card h-100">
-                        <img src="static/img/dan1.jpg" class="card-img-top project-img" alt="Corporate Website Design">
+                        <img src="static/img/sida1.png" class="card-img-top project-img" alt="Corporate Website Design">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span class="badge bg-primary-green">Web Design</span>
-                                <small class="text-muted">2023</small>
+                                <span class="badge bg-primary-green">Web Development</span>
+                                <small class="text-muted">2025</small>
                             </div>
-                            <h5 class="card-title">Corporate Website Redesign</h5>
-                            <p class="card-text">Complete redesign of a corporate website with modern UI/UX principles
-                                and responsive design.</p>
+                            <h5 class="card-title">Course Management Application</h5>
+                            <p class="card-text">A streamlined course management system built for Sidasoft Technologies.
+                                It enables easy organization, scheduling, and tracking of courses, improving
+                                productivity and simplifying daily administrative tasks.</p>
                             <div class="mb-3">
-                                <span class="tech-badge">Figma</span>
-                                <span class="tech-badge">Adobe XD</span>
-                                <span class="tech-badge">UI/UX</span>
-                                <span class="tech-badge">Wireframing</span>
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">Express</span>
+
                             </div>
                         </div>
                         <div class="card-footer bg-white border-0">
-                            <a href="#" class="btn btn-sm btn-accent me-2">View Design</a>
-                            <a href="#" class="btn btn-sm btn-outline-primary-green">Process</a>
+                            <a href="https://sidasoft.org" target="_blank" class="btn w-100"
+                                style="background-color: #C9F31D;">
+                                View Project
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="col-md-6 col-lg-4 portfolio-item" data-category="ecommerce">
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="web">
                     <div class="card project-card h-100">
-                        <img src="static/img/web4.png" class="card-img-top project-img" alt="Shopify Store">
+                        <img src="static/img/aim1.png" class="card-img-top project-img" alt="Shopify Store">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span class="badge bg-primary-green">E-Commerce</span>
-                                <small class="text-muted">2024</small>
+                                <span class="badge bg-primary-green">Web Development</span>
+                                <small class="text-muted">2025</small>
                             </div>
-                            <h5 class="card-title">Shopify Custom Store</h5>
-                            <p class="card-text">Custom Shopify theme development with unique features tailored to the
-                                client's brand.</p>
+                            <h5 class="card-title">Institution Website</h5>
+                            <p class="card-text">A fully responsive website developed for Augustinian Institute Makurdi,
+                                designed to
+                                provide students, staff, and visitors with easy access to information, resources,
+                                and online services.</p>
                             <div class="mb-3">
-                                <span class="tech-badge">Shopify</span>
-                                <span class="tech-badge">Liquid</span>
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
                                 <span class="tech-badge">JavaScript</span>
-                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">Express</span>
                             </div>
                         </div>
                         <div class="card-footer bg-white border-0">
-                            <a href="#" class="btn btn-sm btn-accent me-2">View Store</a>
-                            <a href="#" class="btn btn-sm btn-outline-primary-green">Details</a>
+                            <a href="https://aimakurdi.ng" target="_blank" class="btn w-100"
+                                style="background-color: #C9F31D;">
+                                View Project
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -281,25 +298,29 @@
                 <!-- Project 4 -->
                 <div class="col-md-6 col-lg-4 portfolio-item" data-category="app">
                     <div class="card project-card h-100">
-                        <img src="static/img/web2.jpg" class="card-img-top project-img" alt="Task Management App">
+                        <img src="static/img/screenport.png" class="card-img-top project-img" alt="portfolio website">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <span class="badge bg-primary-green">Web App</span>
-                                <small class="text-muted">2023</small>
+                                <small class="text-muted">2025</small>
                             </div>
-                            <h5 class="card-title">Task Management Application</h5>
-                            <p class="card-text">A productivity web app with task management, team collaboration, and
-                                progress tracking.</p>
+                            <h5 class="card-title">Portfolio Website</h5>
+                            <p class="card-text">A professional personal portfolio highlighting my web development
+                                projects,
+                                technical skills, creative design solutions, and achievements, providing visitors
+                                with an engaging and comprehensive overview of my work.</p>
                             <div class="mb-3">
-                                <span class="tech-badge">React</span>
-                                <span class="tech-badge">Redux</span>
-                                <span class="tech-badge">Firebase</span>
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
                                 <span class="tech-badge">Material UI</span>
                             </div>
                         </div>
                         <div class="card-footer bg-white border-0">
-                            <a href="#" class="btn btn-sm btn-accent me-2">Live Demo</a>
-                            <a href="#" class="btn btn-sm btn-outline-primary-green">Code</a>
+                            <a href="https://simono.tech" target="_blank" class="btn w-100"
+                                style="background-color: #C9F31D;">
+                                View Project
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -324,7 +345,8 @@
                             </div>
                         </div>
                         <div class="card-footer bg-white border-0">
-                            <a href="#" class="btn btn-sm btn-accent me-2">View Site</a>
+                            <a href="#" class="btn btn-sm btn-accent me-2">Work in Progress</a>
+
                             <a href="#" class="btn btn-sm btn-outline-primary-green">Features</a>
                         </div>
                     </div>
@@ -350,7 +372,8 @@
                             </div>
                         </div>
                         <div class="card-footer bg-white border-0">
-                            <a href="#" class="btn btn-sm btn-accent me-2">View Design</a>
+                            <a href="#" class="btn btn-sm btn-accent me-2">Work in Progress</a>
+
                             <a href="#" class="btn btn-sm btn-outline-primary-green">Metrics</a>
                         </div>
                     </div>
@@ -387,8 +410,12 @@
                                 <small class="text-muted">CEO, MadePetal Clinic&Spa</small>
                             </div>
                         </div>
-                        <p class="mb-0">"He delivered our Spa/e-commerce platform ahead of schedule. His attention to
-                            detail and problem-solving skills are exceptional."</p>
+                        <p class="mb-4" style="text-align: justify;">
+                            "Fr. Simon [Sidasoft Technologies] redesigned our website into a modern, responsive, and
+                            user-friendly platform.
+                            The new Spa and E-commerce system has greatly improved our customer experience and
+                            boosted our online sales."
+                        </p>
                         <div class="mt-3 text-warning">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -408,8 +435,14 @@
                                 <small class="text-muted">Director, MaryPauline Enterprise</small>
                             </div>
                         </div>
-                        <p class="mb-0">"Simon's redesign of our To-Do App boosted user engagement by 35%! Highly
-                            recommend his design skills!"</p>
+                        <p class="mb-4" style="text-align: justify;">
+                            "Simon developed our farm house website for bookings and supply, and the transformation has
+                            been remarkable.
+                            The platform is now easier to use, more efficient, and has greatly improved how our
+                            customers interact with us.
+                            Highly recommended!"
+                        </p>
+
                         <div class="mt-3 text-warning">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -422,15 +455,20 @@
                 <div class="col-md-4">
                     <div class="p-4 h-100 border rounded">
                         <div class="d-flex align-items-center mb-3">
-                            <img src="static/img/Nath.jpg" alt="Client" class="rounded-circle me-3" width="60"
+                            <img src="static/img/Helen.jpg" alt="Client" class="rounded-circle me-3" width="60"
                                 height="60">
                             <div>
-                                <h5 class="mb-0">Nathaniel Egbodo</h5>
-                                <small class="text-muted">Lecturer</small>
+                                <h5 class="mb-0">Helen Egwuatu</h5>
+                                <small class="text-muted">CEO Hellani Store</small>
                             </div>
                         </div>
-                        <p class="mb-0">"Simon was a fantastic collaborator on our web app projects. His technical
-                            expertise and problem-solving skills were invaluable—highly recommend working with him!"</p>
+                        <p class="mb-0" style="text-align: justify;">
+                            "Fr. Simon delivered our project on time and exceeded our expectations. His communication
+                            throughout the process
+                            was excellent, and his attention to detail ensured we received a solution that truly met our
+                            needs."
+                        </p>
+
                         <div class="mt-3 text-warning">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -452,7 +490,7 @@
                     <h2 class="display-5 fw-bold mb-4">Have a Project in Mind?</h2>
                     <p class="lead mb-5">I'm currently available for freelance work. Let's discuss how I can help bring
                         your ideas to life.</p>
-                    <a href="contact.html" class="btn btn-accent btn-lg px-5 me-3">Get a Quote</a>
+                    <a href="contact.html#contact-form" class="btn btn-accent btn-lg px-5 me-3">Get a Quote</a>
                     <a href="services.html" class="btn btn-outline-light btn-lg px-5">View Services</a>
                 </div>
             </div>
@@ -469,11 +507,11 @@
                     <ul class="list-unstyled">
                         <li class="mb-3">
                             <i class="fas fa-2x fa-map-marker-alt me-3 text-white-50"></i>
-                            <span class="text-white">Makurdi, Nigeria</span>
+                            <span class="text-white">Sidasoft Technologies Makurdi, Benue State, Nigeria</span>
                         </li>
                         <li class="mb-3">
                             <i class="fas fa-2x fa-phone-alt me-3 text-white-50"></i>
-                            <span class="text-white">+234 703 266 5212</span>
+                            <span class="text-white">+2348131479729</span>
                         </li>
                         <li class="mb-3">
                             <i class="fas fa-2x fa-envelope me-3 text-white-50"></i>
@@ -502,14 +540,14 @@
                         </li>
                         <li class="mb-3">
                             <i class="fab fa-2x fa-whatsapp me-3 text-white-50"></i>
-                            <a href="https://wa.me/2347032665212" class="text-white text-decoration-none">
+                            <a href="https://wa.me/2348131479729" class="text-white text-decoration-none">
                                 WhatsApp Chat
                             </a>
                         </li>
                         <li class="mb-3">
                             <i class="fab fa-2x fa-tiktok me-3 text-white-50"></i>
-                            <a href="https://www.tiktok.com/@fos_media" class="text-white text-decoration-none">
-                                fos_media
+                            <a href="https://www.tiktok.com/@sidasoft" class="text-white text-decoration-none">
+                                Sidasoft
                             </a>
                         </li>
                     </ul>
