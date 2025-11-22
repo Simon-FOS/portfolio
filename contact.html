@@ -304,26 +304,35 @@
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <label for="name" class="form-label">Your Name</label>
-                                        <!-- Add name attribute for Formspree -->
                                         <input type="text" class="form-control form-control-lg" id="name" name="name"
                                             required>
                                     </div>
+
                                     <div class="col-md-6">
                                         <label for="email" class="form-label">Email Address</label>
-                                        <!-- Use _replyto as name for automatic reply handling -->
                                         <input type="email" class="form-control form-control-lg" id="email"
                                             name="_replyto" required>
                                     </div>
+
+                                    <!-- Phone Number Field -->
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control form-control-lg" id="phone" name="phone"
+                                            placeholder="" required>
+                                    </div>
+
                                     <div class="col-12">
                                         <label for="subject" class="form-label">Subject</label>
                                         <input type="text" class="form-control form-control-lg" id="subject"
                                             name="subject" required>
                                     </div>
+
                                     <div class="col-12">
                                         <label for="message" class="form-label">Your Message</label>
                                         <textarea class="form-control form-control-lg" id="message" name="message"
                                             rows="5" required></textarea>
                                     </div>
+
                                     <div class="form-check mb-3">
                                         <input class="form-check-input" type="checkbox" id="privacyConsent"
                                             name="privacyConsent" required>
@@ -332,9 +341,8 @@
                                                 Policy</a>
                                         </label>
                                     </div>
-                                    <!-- Optional: Add redirect after submission -->
+
                                     <input type="hidden" name="_next" value="#contact-form">
-                                    <!-- Honeypot spam prevention -->
                                     <input type="text" name="_gotcha" style="display:none">
 
                                     <div class="col-12 text-center mt-4">
@@ -346,6 +354,7 @@
                                     </div>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>
