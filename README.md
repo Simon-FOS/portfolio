@@ -1,6 +1,6 @@
 # Developer Portfolio
 
-![Portfolio Preview](./screenshot.png) *<!-- Replace with actual screenshot file -->*
+![Portfolio Preview](./screenshot.png) *<!--actual screenshot file -->*
 
 ## Table of Contents
 - [Overview](#overview)
@@ -27,7 +27,7 @@ A modern, responsive portfolio website showcasing my web development projects an
 - Tailwind CSS
 - Framer Motion (for animations)
 
-### Backend (if applicable)
+### Backend 
 - Node.js
 - Express
 
